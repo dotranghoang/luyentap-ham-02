@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+             count = [];
+             arr = [];
+             length = parseInt(prompt("Nhap kich thuoc mang"));
+            for(var i = 0 ; i < length ; i ++ ) {
+                arr[i] = prompt("Nhap phan tu trong mang");
+            }
+            function check(arr) {
+
+             count = 0;
+             txt = prompt ("Nhap ki tu bat ki");
+            for(var j = 0 ; j < arr.length ; j ++) {
+                if( txt == arr[j]) {
+                   count++;
+                  }
+                } 
+                if(count == 0) {
+                    return -1;
+                } else {
+                    return count;
+                }
+              }
+            
+document.write(check(arr));
+    </script>
+    
+</body>
+</html>

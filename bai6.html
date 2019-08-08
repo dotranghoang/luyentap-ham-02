@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function checkInt(num) {
+        if(parseInt(num) == num && (num - 1) >= 0 ) {
+           return true;
+        } else {
+            return false;
+        }
+    }
+    let num = parseFloat(prompt("Nhap 1 so bat ki"));
+    document.write(checkInt(num));
+    </script>
+</body>
+</html>
